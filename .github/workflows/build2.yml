@@ -4,7 +4,7 @@
 
 # https://raw.githubusercontent.com/Xaymar/obs-StreamFX/5bdcefd61828414a73aa9964560a8806254e8677/.github/workflows/main.yml
 
-name: Build
+name: Build2
 
 on: workflow_dispatch
 
