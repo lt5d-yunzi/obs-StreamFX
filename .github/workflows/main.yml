@@ -9,7 +9,6 @@ concurrency:
   group: build-${{ github.ref_name }}
   cancel-in-progress: true
 
-
 env:
   CACHE_VERSION: "2023-11-29"
 
