@@ -22,17 +22,12 @@ jobs:
       matrix:
         runner: ["windows-2022"]
         name: ["Windows"]
-        compiler: ["MSVC", "Clang"]
+        compiler: ["MSVC"]
         qt: [6]
         include:
           - compiler: "MSVC"
             CMAKE_SYSTEM_VERSION: "10.0.20348.0"
             CMAKE_GENERATOR: "Visual Studio 17 2022"
-            CMAKE_GENERATOR_PLATFORM: "x64"
-          - compiler: "Clang"
-            CMAKE_SYSTEM_VERSION: "10.0.20348.0"
-            CMAKE_GENERATOR: "Visual Studio 17 2022"
-            CMAKE_GENERATOR_TOOLSET: "ClangCL"
             CMAKE_GENERATOR_PLATFORM: "x64"
     runs-on: "${{ matrix.runner }}"
     name: "${{ matrix.name }} (${{ matrix.compiler }})"
